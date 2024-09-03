@@ -1,98 +1,748 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="alfira's project" />
-        <meta name="author" content="alfira" />
-        <title>Project - Alfira Triazalma</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/icon-web.png" />
-        <!-- Custom Google font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body class="d-flex flex-column h-100 bg-light">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Alfira's Portfolio</span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                        </ul>
-                    </div>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Alfira's project" />
+    <meta name="author" content="Alfira" />
+    <title>Project - Alfira Triazalma</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/icon-web.png" />
+    <!-- Custom Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        /* Custom styles for Instagram Story size */
+        .instagram-story {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 9 / 16; /* Aspect ratio for Instagram story */
+        }
+        /* Custom styles for portrait video */
+        .portrait-video {
+            max-height: 500px;
+            width: 100%;
+            object-fit: cover;
+        }
+        #poster-container {
+            width: 300px;
+            height: 400px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ddd;
+        }
+
+        #poster-container img {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    </style>
+</head>
+<body class="d-flex flex-column h-100 bg-light">
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Alfira's Portfolio</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    </ul>
                 </div>
-            </nav>
-            <!-- Projects Section-->
-            <section class="py-5">
-                <div class="container px-5 mb-5">
-                    <div class="text-center mb-5">
-                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
-                    </div>
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-11 col-xl-9 col-xxl-8">
-                            <!-- Project Card 1-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Dokter English Poster</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-                                        </div>
-                                        <img class="img-project" src="assets/Poster 1.png" alt="poster" />
+            </div>
+        </nav>
+        <!-- Projects Section-->
+        <section class="py-5">
+            <div class="container px-5 mb-5">
+                <div class="text-center mb-5">
+                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-11 col-xl-9 col-xxl-8">
+                        <!-- Project : Poster -->
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <h2 class="text-primary fw-bolder mb-0">Poster</h2>
+                        </div>
+                        <!-- Project Grid: Three Columns for Posters -->
+                        <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+                            <!-- Poster 1: Photo -->
+                            <div class="col">
+                                <div class="card overflow-hidden shadow rounded-2 border-0 h-100">
+                                    <div class="card-body p-4">
+                                        <img class="img-fluid rounded mb-3" src="assets/Poster/Poster 1.PNG" alt="Poster 1" data-bs-toggle="modal" data-bs-target="#Poster1Modal">
+                                        <h5 class="card-title">Advanced English Program Poster</h5>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Project Card 2-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Poster 2</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-                                        </div>
-                                        <img class="img-project" src="assets/Poster 2.PNG" alt="poster" />
+                            <!-- Poster 2: Photo -->
+                            <div class="col">
+                                <div class="card overflow-hidden shadow rounded-2 border-0 h-100">
+                                    <div class="card-body p-4">
+                                        <img class="img-fluid rounded mb-3" src="assets/Poster/Poster 2.png" alt="Project Poster" data-bs-toggle="modal" data-bs-target="#Poster2Modal">
+                                        <h5 class="card-title">Online Course Poster</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Poster 3: Photo -->
+                            <div class="col">
+                                <div class="card overflow-hidden shadow rounded-2 border-0 h-100">
+                                    <div class="card-body p-4">
+                                        <img class="img-fluid rounded mb-3" src="assets/Poster/Poster 3.png" alt="Project Poster" data-bs-toggle="modal" data-bs-target="#Poster3Modal">
+                                        <h5 class="card-title">TOEFL Prep for CPNS Poster</h5>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Poster 4: Photo -->
+                            <div class="col">
+                                <div class="card overflow-hidden shadow rounded-2 border-0 h-100">
+                                    <div class="card-body p-4">
+                                        <img class="img-fluid rounded mb-3" src="assets/Poster/Poster 4.PNG" alt="Poster 1" data-bs-toggle="modal" data-bs-target="#Poster4Modal">
+                                        <h5 class="card-title">English Class Announce Poster</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Poster 5: Photo -->
+                            <div class="col">
+                                <div class="card overflow-hidden shadow rounded-2 border-0 h-100">
+                                    <div class="card-body p-4">
+                                        <img class="img-fluid rounded mb-3" src="assets/Poster/Poster 5.png" alt="Project Poster" data-bs-toggle="modal" data-bs-target="#Poster5Modal">
+                                        <h5 class="card-title">English Class Enrollment Poster</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Poster 6: Photo -->
+                            <div class="col">
+                                <div class="card overflow-hidden shadow rounded-2 border-0 h-100">
+                                    <div class="card-body p-4">
+                                        <img class="img-fluid rounded mb-3" src="assets/Poster/Poster 6.png" alt="Project Poster" data-bs-toggle="modal" data-bs-target="#Poster6Modal">
+                                        <h5 class="card-title">New Class Launch Poster</h5>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Call to action section-->
-            <section class="py-5 bg-gradient-primary-to-secondary text-white">
-                <div class="container px-5 my-5">
-                    <div class="text-center">
-                        <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
-                        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="https://wa.me/6285817776499" target="_blank">Contact me</a>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <!-- Footer-->
-        <footer class="bg-white py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-center flex-column flex-sm-row">
-                    <div class="col-auto text-center">
-                        <div class="small m-0">Copyright &copy; 2024 | Alfira Triazalma</div>
+
+                        <!-- Project : Feed Content -->
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <h2 class="text-primary fw-bolder mb-0">Feed Content</h2>
+                        </div>
+                        <!-- Project Grid: Three Columns for Posters -->
+                        <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+                            <!-- Project 1: Photo -->
+                            <div class="col">
+                                <div class="card overflow-hidden shadow rounded-2 border-0 h-100">
+                                    <div class="card-body p-4">
+                                        <img class="img-fluid rounded mb-3" src="assets/Poster 1.PNG" alt="Project Poster" data-bs-toggle="modal" data-bs-target="#Konten1Modal">
+                                        <h5 class="card-title">Project Poster 1</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project 2: Photo -->
+                            <div class="col">
+                                <div class="card overflow-hidden shadow rounded-2 border-0 h-100">
+                                    <div class="card-body p-4">
+                                        <img class="img-fluid rounded mb-3" src="assets/Poster 2.PNG" alt="Project Poster" data-bs-toggle="modal" data-bs-target="#Poster2Modal">
+                                        <h5 class="card-title">Project Poster 2</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project 3: Photo -->
+                            <div class="col">
+                                <div class="card overflow-hidden shadow rounded-2 border-0 h-100">
+                                    <div class="card-body p-4">
+                                        <img class="img-fluid rounded mb-3" src="assets/Poster 3.PNG" alt="Project Poster" data-bs-toggle="modal" data-bs-target="#Poster2Modal">
+                                        <h5 class="card-title">Project Poster 3</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project : Insta Story -->
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <h2 class="text-primary fw-bolder mb-0">Insta Story</h2>
+                        </div>
+                        <!-- Project Grid: Three Columns for Instagram Stories -->
+                        <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+                            <!-- Instagram Story 1 -->
+                            <div class="col">
+                                <div class="card overflow-hidden shadow rounded-2 border-0 h-100">
+                                    <div class="card-body p-4">
+                                        <img class="instagram-story rounded mb-3" src="assets/Story/Story 1.png" alt="Instagram Story 1" data-bs-toggle="modal" data-bs-target="#story1Modal">
+                                        <h5 class="card-title">Instagram Story 1</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Instagram Story 2 -->
+                            <div class="col">
+                                <div class="card overflow-hidden shadow rounded-2 border-0 h-100">
+                                    <div class="card-body p-4">
+                                        <video controls class="portrait-video rounded mb-3" data-bs-toggle="modal" data-bs-target="#Story2Modal">
+                                            <source src="assets/Story/Story 2.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                        <h5 class="card-title">Section 3 Words</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Instagram Story 3 -->
+                            <div class="col">
+                                <div class="card overflow-hidden shadow rounded-2 border-0 h-100">
+                                    <div class="card-body p-4">
+                                        <img class="instagram-story rounded mb-3" src="assets/Story/Story 3.png" alt="Instagram Story 3" data-bs-toggle="modal" data-bs-target="#story3Modal">
+                                        <h5 class="card-title">Instagram Story 3</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Instagram Story 4 -->
+                            <div class="col">
+                                <div class="card overflow-hidden shadow rounded-2 border-0 h-100">
+                                    <div class="card-body p-4">
+                                        <img class="instagram-story rounded mb-3" src="assets/Story/Story 4.png" alt="Instagram Story 1" data-bs-toggle="modal" data-bs-target="#story4Modal">
+                                        <h5 class="card-title">Instagram Story 4</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Instagram Story 5 -->
+                            <div class="col">
+                                <div class="card overflow-hidden shadow rounded-2 border-0 h-100">
+                                    <div class="card-body p-4">
+                                        <video controls class="portrait-video rounded mb-3" data-bs-toggle="modal" data-bs-target="#Story5Modal">
+                                            <source src="assets/Story/Story 5.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                        <h5 class="card-title">Section Quiz Time</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Instagram Story 6 -->
+                            <div class="col">
+                                <div class="card overflow-hidden shadow rounded-2 border-0 h-100">
+                                    <div class="card-body p-4">
+                                        <img class="instagram-story rounded mb-3" src="assets/Story/Story 6.png" alt="Instagram Story 3" data-bs-toggle="modal" data-bs-target="#story6Modal">
+                                        <h5 class="card-title">Instagram Story 6</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project : Video Content -->
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <h2 class="text-primary fw-bolder mb-0">Video Content</h2>
+                        </div>
+                        <!-- Project Grid: Three Columns for Portrait Videos -->
+                        <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+                            <!-- Portrait Video 1 -->
+                            <div class="col">
+                                <div class="card overflow-hidden shadow rounded-0 border-0 h-100">
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title">Portrait Video 1</h5>
+                                        <video controls class="portrait-video rounded mb-3" data-bs-toggle="modal" data-bs-target="#video1Modal">
+                                            <source src="assets/portrait-video-1.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                        <p class="card-text">Description of Portrait Video 1.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Portrait Video 2 -->
+                            <div class="col">
+                                <div class="card overflow-hidden shadow rounded-0 border-0 h-100">
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title">Portrait Video 2</h5>
+                                        <video controls class="portrait-video rounded mb-3" data-bs-toggle="modal" data-bs-target="#video2Modal">
+                                            <source src="assets/portrait-video-2.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                        <p class="card-text">Description of Portrait Video 2.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Portrait Video 3 -->
+                            <div class="col">
+                                <div class="card overflow-hidden shadow rounded-0 border-0 h-100">
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title">Portrait Video 3</h5>
+                                        <video controls class="portrait-video rounded mb-3" data-bs-toggle="modal" data-bs-target="#video3Modal">
+                                            <source src="assets/portrait-video-3.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                        <p class="card-text">Description of Portrait Video 3.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project : Content Planning -->
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <h2 class="text-primary fw-bolder mb-0">Content Planning</h2>
+                        </div>
+                        <!-- Project 4: Spreadsheet Link -->
+                        <div class="card overflow-hidden shadow rounded-0 border-0 mt-4">
+                            <div class="card-body p-4">
+                                <h5 class="card-title">Project Spreadsheet</h5>
+                                <p class="card-text">Check out the detailed project data in the spreadsheet linked below.</p>
+                                <a class="btn btn-primary" href="https://docs.google.com/spreadsheets/d/your-spreadsheet-id" target="_blank">View Spreadsheet</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
-<html>
-        
+        </section>
+
+        <!-- Call to action section-->
+        <section class="py-5 bg-gradient-primary-to-secondary text-white">
+            <div class="container px-5 my-5">
+                <div class="text-center">
+                    <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
+                    <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="https://wa.me/6285817776499" target="_blank">Contact me</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer-->
+    <footer class="bg-light py-4 mt-auto">
+        <div class="container px-5">
+            <div class="d-flex align-items-center justify-content-between small">
+                <div class="text-muted">© 2024 Alfira Triazalma. All Rights Reserved.</div>
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    <span class="mx-1">·</span>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script>
+        const posterImages = [
+            "poster1-1.jpg",
+            "poster1-2.jpg",
+            "poster1-3.jpg",
+            "poster1-4.jpg",
+            "poster1-5.jpg"
+        ];
+
+        let currentImageIndex = 0;
+
+        function showNextImage() {
+            if (currentImageIndex < posterImages.length - 1) {
+                currentImageIndex++;
+            } else {
+                currentImageIndex = 0;
+            }
+
+            document.getElementById('current-poster').src = posterImages[currentImageIndex];
+        }
+    </script>
+
+
+<!-- Modals for detailed view -->
+<!-- Konten 1 Modal -->
+<div class="modal fade" id="Konten1Modal" tabindex="-1" aria-labelledby="Konten1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Konten1ModalLabel">Konten 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Initial Grid View -->
+                <div id="initialView" class="d-flex justify-content-around flex-wrap">
+                    <img src="assets/Poster 1.PNG" class="img-thumbnail cursor-pointer" alt="Poster 1" onclick="showCarousel(0)">
+                    <img src="assets/Poster 1-2.PNG" class="img-thumbnail cursor-pointer" alt="Poster 2" onclick="showCarousel(1)">
+                    <img src="assets/Poster 1-3.PNG" class="img-thumbnail cursor-pointer" alt="Poster 3" onclick="showCarousel(2)">
+                </div>
+                
+                <!-- Carousel (initially hidden) -->
+                <div id="carouselView" class="d-none">
+                    <div id="project1Carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/Poster 1.PNG" class="d-block w-100" alt="Slide 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/Poster 1-2.PNG" class="d-block w-100" alt="Slide 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/Poster 1-3.PNG" class="d-block w-100" alt="Slide 3">
+                            </div>
+                            <!-- Add more images if needed -->
+                        </div>
+                        <!-- Carousel controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#project1Carousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#project1Carousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <p class="mt-3">This is a detailed description of Project Poster 1.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    #initialView img {
+        max-width: 200px; /* Adjust this value to control the size */
+        height: auto;
+    }
+    .img-thumbnail {
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    function showCarousel(index) {
+        // Hide the initial view and show the carousel view
+        document.getElementById('initialView').classList.add('d-none');
+        document.getElementById('carouselView').classList.remove('d-none');
+
+        // Update carousel items to ensure proper active class assignment
+        const carouselItems = document.querySelectorAll('#project1Carousel .carousel-item');
+        carouselItems.forEach((item, i) => {
+            item.classList.remove('active');
+            if (i === index) {
+                item.classList.add('active');
+            }
+        });
+
+        // Reset carousel to the selected slide
+        const carousel = new bootstrap.Carousel(document.getElementById('project1Carousel'));
+        carousel.to(index);
+    }
+
+    // Reset view when the modal is hidden (closed)
+    document.getElementById('Konten1Modal').addEventListener('hidden.bs.modal', function () {
+        // Ensure the modal always starts with the initial grid view
+        document.getElementById('initialView').classList.remove('d-none');
+        document.getElementById('carouselView').classList.add('d-none');
+    });
+</script>
+
+    <!-- Poster 1 Modal -->
+    <div class="modal fade" id="Poster1Modal" tabindex="-1" aria-labelledby="Poster1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Poster1ModalLabel">Advanced English Program Poster</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid rounded mb-3" src="assets/Poster/Poster 1.PNG" alt="Poster 1">
+                    <p>A promotional poster featuring a modern, professional design that emphasizes academic growth and progression.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Poster 2 Modal -->
+    <div class="modal fade" id="Poster2Modal" tabindex="-1" aria-labelledby="Poster2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Poster2ModalLabel">Online Course Flexibility Poster</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid rounded mb-3" src="assets/Poster/Poster 2.png" alt="Poster 2">
+                    <p>An informational poster with a clean layout, showcasing the ease and flexibility of learning from home through visual elements.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Poster 3 Modal -->
+    <div class="modal fade" id="Poster3Modal" tabindex="-1" aria-labelledby="Poster3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Poster3ModalLabel">TOEFL Prep for CPNS Poster</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid rounded mb-3" src="assets/Poster/Poster 3.png" alt="Poster 3">
+                    <p>A bold, focused design highlighting exam readiness, tailored for CPNS candidates preparing for the TOEFL.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Poster 4 Modal -->
+    <div class="modal fade" id="Poster4Modal" tabindex="-1" aria-labelledby="Poster4ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Poster4ModalLabel">English Class Announcement Poster</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid rounded mb-3" src="assets/Poster/Poster 4.PNG" alt="Poster 4">
+                    <p> A minimalist poster announcing new English classes, with visual options for regular and private sessions.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Poster 5 Modal -->
+    <div class="modal fade" id="Poster5Modal" tabindex="-1" aria-labelledby="Poster5ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Poster5ModalLabel">English Class Enrollment Poster</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid rounded mb-3" src="assets/Poster/Poster 5.png" alt="Poster 5">
+                    <p>A balanced and professional design emphasizing the guarantee of success for participants joining the English class.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Poster 6 Modal -->
+    <div class="modal fade" id="Poster6Modal" tabindex="-1" aria-labelledby="Poster6ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Poster6ModalLabel">New Class Launch Poster</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid rounded mb-3" src="assets/Poster/Poster 6.png" alt="Poster 6">
+                    <p>An interactive poster promoting new classes, focusing on a supportive and dynamic learning environment with both regular and private options.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Instagram Story 1 Modal -->
+    <div class="modal fade" id="story1Modal" tabindex="-1" aria-labelledby="story1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="story1ModalLabel">Instagram Story 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid rounded mb-3" src="assets/Story/Story 1.png" alt="Instagram Story 1">
+                    <p>Description of Instagram Story 1 in more detail.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Instagram Story 2 Modal -->
+    <div class="modal fade" id="Story2Modal" tabindex="-1" aria-labelledby="Story2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Story2ModalLabel">Section 3 Words</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <video controls class="w-100 rounded mb-3">
+                        <source src="assets/Story/Story 2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Description of Section 3 Words in more detail.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Instagram Story 3 Modal -->
+    <div class="modal fade" id="story3Modal" tabindex="-1" aria-labelledby="story3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="story3ModalLabel">Instagram Story 3</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid rounded mb-3" src="assets/Story/Story 3.png" alt="Instagram Story 3">
+                    <p>Description of Instagram Story 3 in more detail.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Instagram Story 4 Modal -->
+    <div class="modal fade" id="story4Modal" tabindex="-1" aria-labelledby="story4ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="story4ModalLabel">Instagram Story 4</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid rounded mb-3" src="assets/Story/Story 4.png" alt="Instagram Story 4">
+                    <p>Description of Instagram Story 4 in more detail.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Instagram Story 5 Modal -->
+    <div class="modal fade" id="Story5Modal" tabindex="-1" aria-labelledby="Story5ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Story5ModalLabel">Section Quiz Time</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <video controls class="w-100 rounded mb-3">
+                        <source src="assets/Story/Story 5.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Description of Section Quiz Time in more detail.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Instagram Story 6 Modal -->
+    <div class="modal fade" id="story6Modal" tabindex="-1" aria-labelledby="story6ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="story6ModalLabel">Instagram Story 6</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid rounded mb-3" src="assets/Story/Story 6.png" alt="Instagram Story 6">
+                    <p>Description of Instagram Story 6 in more detail.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portrait Video 1 Modal -->
+    <div class="modal fade" id="video1Modal" tabindex="-1" aria-labelledby="video1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="video1ModalLabel">Portrait Video 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <video controls class="w-100">
+                        <source src="assets/portrait-video-1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Description of Portrait Video 1 in more detail.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portrait Video 2 Modal -->
+    <div class="modal fade" id="video2Modal" tabindex="-1" aria-labelledby="video2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="video2ModalLabel">Portrait Video 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <video controls class="w-100">
+                        <source src="assets/portrait-video-2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Description of Portrait Video 2 in more detail.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portrait Video 3 Modal -->
+    <div class="modal fade" id="video3Modal" tabindex="-1" aria-labelledby="video3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="video3ModalLabel">Portrait Video 3</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <video controls class="w-100">
+                        <source src="assets/portrait-video-3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Description of Portrait Video 3 in more detail.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
