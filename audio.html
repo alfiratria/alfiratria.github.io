@@ -12,7 +12,7 @@
   </style>
 </head>
 <body>
-  <audio id="backgroundMusic" loop>
+  <audio id="backgroundMusic" loop autoplay>
     <source src="assets/Backsound.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
@@ -63,23 +63,22 @@
       }
     });
 
-        // Pause audio when tab is not active
-        document.addEventListener('visibilitychange', () => {
-      if (document.hidden) {
-        pauseAudio();
-      } else {
+    // Play audio when tab is active again
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden) {
         restoreAudioState();
+        playAudio(); // Ensure audio plays when returning to the tab
       }
     });
 
     // Restore audio state on page load
-    window.addEventListener('load', restoreAudioState);
+    window.addEventListener('load', () => {
+      restoreAudioState();
+      playAudio(); // Ensure audio plays on first load
+    });
 
     // Save audio state before unloading the page
     window.addEventListener('beforeunload', saveAudioState);
-
-    // Play audio initially
-    playAudio();
   </script>
 </body>
 </html>
